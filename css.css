@@ -1,13 +1,16 @@
-#cityContainer{
-    border:solid black 2px;
-}
+
 header{
     padding:20px;
     text-align: center;
     background-color: bisque;
 }
-aside{
-    border-right: solid black ;
+aside{ 
+  color:navy !important;
+  font-size:large;
+  text-align: left;
+  padding:20px;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 #cityContainer{
@@ -25,11 +28,29 @@ aside{
   border: solid black;
 
 }
-section1>#cityC{
-  flex:0 0 77% !important;
-  grid-template-columns: 1fr ;
-  grid-template-rows: auto;
-  border: solid black;
+div{
+
+     color:navy !important;
+     font-size:large;
+     padding:20px;
+     background-image: url('pico.png');
+ 
+}
+#cityInput{
+  margin-bottom:20px!important; 
+}
+aside >h7{
+  flex:0 0 77%;
+    color:navy;
+    font-size:large;
+    padding:60px;
+    border:solid purple;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-decoration:underline;
+    display:inline-block;
+    background-color:paleturquoise;
+    text-align:right;
 }
 
 

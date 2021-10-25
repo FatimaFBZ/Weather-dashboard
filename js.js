@@ -52,14 +52,6 @@ function fiveDaysWeather(data) {
       $('#cityContainer1').append(uviHtml)
 
       }
-      
-
-
-
-
-
-
-    
 
     })
     
@@ -121,38 +113,7 @@ function cityCity(event){
   .then(data => {
       fiveDaysWeather(data);
 
-
-      let daily=data.current
-      console.log(data.current)
-      //$('#cityC').empty()
-      for(let i=0;i<1;i++){
-
-        let temp= data.current.temp
-        let wind=data.current.wind_speed
-        let humidity=data.current.humidity
-        let uvi= data.current.uvi
-        
-      var dailyHtml= $('<h6>')
-      dailyHtml.text(moment.unix(data.current.dt).format("MMM Do YY"))
-      $('#cityC').append(dailyHtml)
-    
-      var temHtml=$('<h6>')
-      temHtml.text("temp" + ":"+ temp +'\xB0'+ 'F')
-      $('#cityC').append(temHtml)
-
-      var windHtml=$('<h6>')
-      windHtml.text("wind"+ ":"+ wind +'MPH')
-      $('#cityC').append(windHtml)
-
-      var humidityHtml=$('<h6>')
-      humidityHtml.text("humidity"+ ":" +humidity+'%')
-      $('#cityC').append(humidityHtml)
-      var uviHtml=$('<h6>')
-      uviHtml.text("uvi"+ ":"+uvi)
-      $('#cityC').append(uviHtml)
-
-      }
-   })
+  })
 }
 
 
